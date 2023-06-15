@@ -1,4 +1,6 @@
-# docs and experiment results can be found at https://docs.cleanrl.dev/rl-algorithms/c51/#c51_ataripy
+# docs and experiment results can be found at https://docs.cleanrl.dev/rl-algorithms/c51/
+# cv2 libgl1 problems: https://stackoverflow.com/questions/55313610/importerror-libgl-so-1-cannot-open-shared-object-file-no-such-file-or-directo
+#c51_ataripy
 import argparse
 import os
 import random
