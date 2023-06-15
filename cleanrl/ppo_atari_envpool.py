@@ -7,6 +7,7 @@ from collections import deque
 from distutils.util import strtobool
 
 import envpool
+print(envpool.list_all_envs())
 import gym
 import numpy as np
 import torch
