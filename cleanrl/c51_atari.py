@@ -48,6 +48,7 @@ def parse_args():
         help="the user or org name of the model repository from the Hugging Face Hub")
 
     # Algorithm specific arguments
+    # Buffer Size Reading: https://stackoverflow.com/questions/57507832/unable-to-allocate-array-with-shape-and-data-type
     parser.add_argument("--env-id", type=str, default="BreakoutNoFrameskip-v4",
         help="the id of the environment")
     parser.add_argument("--total-timesteps", type=int, default=10000000,
@@ -60,7 +61,7 @@ def parse_args():
         help="the return lower bound")
     parser.add_argument("--v-max", type=float, default=10,
         help="the return upper bound")
-    parser.add_argument("--buffer-size", type=int, default=1000000,
+    parser.add_argument("--buffer-size", type=int, default=20000,
         help="the replay memory buffer size")
     parser.add_argument("--gamma", type=float, default=0.99,
         help="the discount factor gamma")
